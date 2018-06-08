@@ -6,6 +6,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h1>Cifrado Cesar</h1>
+<h3>Encriptar y desencriptar</h3>
+      <!--Hacer una caja de entrada (input) que contenga un string;
+      tengo que crear 2 botones. Encriptar y desencritpar. Para hacer que funcionen los botones
+    en mi js tengo que llamarlos y hacer una función -->
+
+<input id="encripting" type="text" placeholder="Escribe un mensaje"><br>
+<br>
+<input id="offset" type="text" placeholder="Ingresa un número"><br>
+<br>
+<button type="button" onclick="encodeClick()">Encode</button>
+<button type="button" onclick="decodeClick()">Decode</button>
+  <br>
+  <br>
+<!-- Quiero que lo que ingrese el usuario en el input id"offset"
+ -->
+
+<p id="sms"></p>
+<p id="sms2"></p>
     <div id="root"></div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

@@ -1,61 +1,67 @@
-/*crear dos const str (strEncode y strDecode)
-que contenga el string que se ingresa en el input
-para después utilizarla en mis 2 funciones.
- Quiero que mi función cuente el número de caracteres de un string
+// llamando al botón de encode para hacer la función
+const string= document.getElementById("input");//toUpperCase()
+const offset=document.getElementById("offset");
+const respuestaCode=document.getElementById("sms");
+const respuestaDecode=document.getElementById("sms2");
+let vacia1="";
+let vacia2="";
 
+// Función para el botón de encriptar
+const encode = ()=>{
 
-*/
-//const strEncode = document.getElementById("encripting");
-// const srtDecode = document.getElementById("encripting");
+    const string1=string.value;//llamando al valor del string ingresado
+    const offset1=parseInt(offset.value); //llamando al valor y convirtiendo de string a number
+    for(let i=0;i<string1.length;i++){//iterando cada letra para que haga:
+      let asciiNumber = string1[i].charCodeAt();//definiendo variable para el número convertido en ASCII
+      // mayúsculas
+      if(65<=asciiNumber && asciiNumber<=90){//si el número ascii está entre 65 y 90 (o es =)
+        let shiftPosition=(asciiNumber-65+offset1)%26+65;//entonces aplica la fórmula para cifrar y obtener el numero Cifrado
+        vacia1+=String.fromCharCode(shiftPosition);//convierte la posición ascci en letra
+        // console.log(vacia1);
+        // respuestaCode.innerHTML+=asciiLetter;
 
-// const encodeClick= (strEnconcode)=>{
-//
-// }
-// strEncode("A");
+      }else if (97<=asciiNumber&& asciiNumber<=122){//si está entre 97 y 122 en ascii
+        let shiftPosition=asciiNumber-97+offset1%26+97;//aplica fórmula para saber la posición ascii actual
+        vacia1+=String.fromCharCode(shiftPosition);//convierte la posición en letra
+        // console.log(vacia1);
 
-
-const encodeClick = ()=>{
-  const str1= document.getElementById("encripting").value;
-  const str2=str1.toUpperCase();
-  const valorFijo=document.getElementById("offset").value;
-  for(let i=0;i<str2.length; i++){
-      const asciiPosition= str2.charCodeAt(i);
-      const shiftPosition=asciiPosition-65+valorFijo%26+65;
-      const asciiLetter= String.fromCharCode(shiftPosition);
-      document.getElementById("sms").innerHTML+=asciiLetter;
-   //i es igual al índice del caracter
-  }
- //document.getElementById("sms").innerHTML=asciiLetter;
-}
-
- const decodeClick = ()=>{
- const str3=document.getElementById("encripting").value;
- const str4=str3.toUpperCase();
- const valorFijo1=document.getElementById("offset").value;
- for(let i=0; i<str4.length; i++){
-    const asciiPosition1= str4.charCodeAt(i);
-      const shiftPosition1= (asciiPosition1+65-valorFijo1)%26+65;
-      const asciiLetter1=String.fromCharCode(shiftPosition1);
-      // const asciiLetter1= String.fromCharCode(shiftPosition1);
-     console.log(asciiLetter1);
-       document.getElementById("sms2").innerHTML+=asciiLetter1;
+        // respuestaCode.innerHTML+=asciiLetter;
+      }else if(asciiNumber===32){//si el numero ascii es igual a 32 (espacio en ascii)
+        vacia1+=String.fromCharCode(asciiNumber);//devuelve el espacio
+        // console.log(vacia1);
+    }else{
+        vacia1+=String.fromCharCode(asciiNumber);//cualquier otro caso, no codificar
     }
-
+  }
+ return respuestaCode.innerHTML=vacia1; //imprimir en el dom los caracteres en ascii
 }
+encode(string,offset);//utiliza estos
 
-// const decodeClick = ()=>{
-// const str3=document.getElementById("encripting").value;
-// //le quité touppercase;
-// const valorFijo1=document.getElementById("offset").value;
-// for(let i=0; i<str3.length; i++){
-//    const asciiPosition1= str3.charCodeAt(i);
-//    if(asciiPosition1<=65 && asciiPosition1<=90){
-//      const shiftPosition1= (asciiPosition1+65-valorFijo1)%26+65;
-//      // const asciiLetter1= String.fromCharCode(shiftPosition1);
-//     console.log(shiftPosition1);
-//      // document.getElementById("sms2").innerHTML+=asciiLetter1;
-//    }
-//Quiero
-//Ya tengo la posción de la letras en ACII, ahora falta convertilo a letra
-// Quiero que lo que ingrese el usuario en el input id"offset" se lo sume al str2-65
-// a eso, le sacamos % de 26 y le sumamos 65
+// Función para desencriptar
+    const decode=()=>{
+        const string1=string.value;
+        const offset1=parseInt(offset.value);
+        for(let i=0;i<string1.length;i++){
+          let asciiNumber= string1[i].charCodeAt();
+    // mayúsculas
+        if(65<=asciiNumber && asciiNumber<=90){
+          let shiftPosition=(asciiNumber-90-offset1)%26+90;//hasta ahora el procedimiento es el mismo, sin embargo la formula
+      vacia2+=String.fromCharCode(shiftPosition);
+        // console.log(vacia2);
+      // minúscula
+        }else if (asciiNumber>=97 && asciiNumber<=122){
+          let shiftPosition=(asciiNumber-122-offset1)%26+122;
+      vacia2+=String.fromCharCode(shiftPosition);
+        // console.log(vacia2);
+
+        }else if(asciiNumber===32){
+          vacia2+=String.fromCharCode(asciiNumber);
+          // console.log(vacia2);
+
+        }else{
+          vacia2+=String.fromCharCode(asciiNumber);
+    }
+  }
+return respuestaDecode.innerHTML+=vacia2; //devuelve impreso en el dom los caracteres en ASCII
+}
+decode(string,offset);

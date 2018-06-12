@@ -8,16 +8,18 @@
   <body>
     <h1>Cifrado Cesar</h1>
 <h3>Encriptar y desencriptar</h3>
+<p>Escribe un mensaje, asígnale un número y pulsa "Encode" para para poder comunicarte en clave.<br>
+   Para desencriptar utiliza el mismo número y pulsa el botón "Decode"  </p>
       <!--Hacer una caja de entrada (input) que contenga un string;
       tengo que crear 2 botones. Encriptar y desencritpar. Para hacer que funcionen los botones
     en mi js tengo que llamarlos y hacer una función -->
 
-<input id="encripting" type="text" placeholder="Escribe un mensaje"><br>
+<input id="input" type="text" placeholder="Escribe tu mensaje aquí"><br>
 <br>
-<input id="offset" type="text" placeholder="Ingresa un número"><br>
+<input id="offset" type="text" placeholder="Ingresa un número aquí"><br>
 <br>
-<button type="button" onclick="encodeClick()">Encode</button>
-<button type="button" onclick="decodeClick()">Decode</button>
+<button type="button" onclick="encode()">Encode</button>
+<button type="button" onclick="decode()">Decode</button>
   <br>
   <br>
 <!-- Quiero que lo que ingrese el usuario en el input id"offset"
@@ -26,7 +28,8 @@
 <p id="sms"></p>
 <p id="sms2"></p>
     <div id="root"></div>
+
     <script src="cipher.js"></script>
-    <script src="index.js"></script>
+    <script src="index1.js"></script>
   </body>
 </html>

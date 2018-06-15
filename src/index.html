@@ -6,28 +6,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Cifrado Cesar</h1>
-<h3>Encriptar y desencriptar</h3>
-<p>Escribe un mensaje, asígnale un número y pulsa "Encode" para para poder comunicarte en clave.<br>
-   Para desencriptar utiliza el mismo número y pulsa el botón "Decode"  </p>
+    <h1>Cipher friends</h1>
+<h3>¡Crea tu mensaje secreto!</h3>
+<p id=instruccion1>Escribe tu mensaje</p>
       <!--Hacer una caja de entrada (input) que contenga un string;
       tengo que crear 2 botones. Encriptar y desencritpar. Para hacer que funcionen los botones
     en mi js tengo que llamarlos y hacer una función -->
 
 <input id="input" type="text" placeholder="Escribe tu mensaje aquí"><br>
 <br>
-<input id="offset" type="text" placeholder="Ingresa un número aquí"><br>
+<p id=instruccion2>Elige cualquier número</p>
+<input id="offset" type="text" placeholder="Ingresa cualquier número "><br>
 <br>
-<button type="button" onclick="encode()">Encode</button>
-<button type="button" onclick="decode()">Decode</button>
+<button id="encodeClick" type="button">CIFRA</button><br>
+<br>
+  <p id="sms"></p><br>
+<button id="decodeClick" type="button">DESCIFRA</button>
   <br>
   <br>
+
+
 <!-- Quiero que lo que ingrese el usuario en el input id"offset"
  -->
-
-<p id="sms"></p>
-<p id="sms2"></p>
-    <div id="root"></div>
+<section>
+  <p id="sms2"></p>
+      <div id="root"></div>
+  <!-- <button onclick="location.reload();">Reset</button> -->
+</section>
 
     <script src="cipher.js"></script>
     <script src="index.js"></script>

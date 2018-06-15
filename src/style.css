@@ -1,0 +1,56 @@
+
+h1 {
+  font-family: helvetica;
+font-size: 100px;
+font-style: italic;
+text-align: left;
+color: purple;
+margin: 30px;
+/* background-image: url(https://cdn.wccftech.com/wp-content/uploads/2016/09/spacee-740x463.jpg); */
+padding: 15px;
+}
+h3{
+  font-family: helvetica;
+  text-align: left;
+  font-size: 30px;
+  margin: 15px;
+  margin-bottom: 30px;
+  font-weight: lighter;
+}
+
+#input{
+  padding: 10px;
+margin-left:700px;
+border-color: red;;
+}
+
+#offset{
+padding: 10px;
+margin-left:700px;
+border-color: red;
+}
+
+#instruccion1, #instruccion2{
+margin-left: 700px;
+margin-top:15px;
+font-size: 20px;
+font-family:sans-serif;
+}
+#encodeClick, #decodeClick {
+margin-left: 760px;
+background-color: white;
+color:;
+padding: 13px;
+font-family:sans-serif;
+font-weight: bold;
+}
+#decodeClick{
+  margin-left: 750px;
+}
+
+body{
+margin: 50px;
+margin-top: -10px;
+/* background-image: url(https://i.pinimg.com/originals/2a/af/d1/2aafd11738f637a97046f6ae2d8ca5b6.jpg); */
+background-size: 1600px;
+}

@@ -18,6 +18,11 @@ describe('cipher', () => {
     it('debería retornar "hijklmnopqrstuvwxyzabcdefg" para "abcdefghijklmnopqrstuvwxyz" con offset 33', ()=>{
       assert.equal(cipher.encode(33, "abcdefghijklmnopqrstuvwxyz"), "hijklmnopqrstuvwxyzabcdefg")
     });
+
+    it('debería retornar "$/(=%$!" para "$/(=%$!" con offset 33', ()=>{
+      assert.equal(cipher.encode(33, "$/(=%$!"), "$/(=%$!")
+    });
+
   });
   //
   //   it('debería retornar "==&$ " para "==&$ " con offest 33');
@@ -36,6 +41,10 @@ describe('cipher', () => {
 
     it('debería retornar "tuvwxyzabcdefghijklmnopqrs" para "abcdefghijklmnopqrstuvwxyz" con offset 33', ()=>{
       assert.equal(cipher.decode(33, "abcdefghijklmnopqrstuvwxyz"), "tuvwxyzabcdefghijklmnopqrs")
+    });
+    
+    it('debería retornar "$/(=%$!" para "$/(=%$!" con offset 33', ()=>{
+      assert.equal(cipher.encode(33, "$/(=%$!"), "$/(=%$!")
     });
 });
 

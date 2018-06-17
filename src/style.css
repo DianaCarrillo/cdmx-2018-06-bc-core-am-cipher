@@ -1,56 +1,75 @@
-
-h1 {
-  font-family: helvetica;
-font-size: 100px;
-font-style: italic;
-text-align: left;
-color: purple;
-margin: 30px;
-/* background-image: url(https://cdn.wccftech.com/wp-content/uploads/2016/09/spacee-740x463.jpg); */
-padding: 15px;
-}
-h3{
-  font-family: helvetica;
+#hOne{
+  font-family:'Righteous', cursive;
+  font-size: 100px;
+  font-weight: bold;
   text-align: left;
+  color: black;
+  margin: 0px;
+  padding: 15px;
+  color: cyan;
+  background-color: black;
+}
+
+.hThree{
+  text-align: center;
   font-size: 30px;
-  margin: 15px;
-  margin-bottom: 30px;
-  font-weight: lighter;
+  color:white;
+  font-weight: bolder;
+  margin:0px;
+  background-color: black;
 }
 
-#input{
+
+#input, #offset{
   padding: 10px;
-margin-left:700px;
-border-color: red;;
+  margin-left:600px;
+  border-color: red;
+  background-color: black;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 70px;
+  font-size: 25px;
+  text-align: center;
+  border: solid thick cyan;
+  background-color: yellow;
+border-radius: 13px;
 }
 
-#offset{
-padding: 10px;
-margin-left:700px;
-border-color: red;
-}
 
-#instruccion1, #instruccion2{
-margin-left: 700px;
-margin-top:15px;
-font-size: 20px;
-font-family:sans-serif;
-}
+
 #encodeClick, #decodeClick {
-margin-left: 760px;
-background-color: white;
-color:;
-padding: 13px;
-font-family:sans-serif;
-font-weight: bold;
-}
-#decodeClick{
+  padding: 13px;
+  font-family:inherit;
+  font-weight: bold;
+  font-size: 20px;
+  display:inline-block;
+  width: 200px;
   margin-left: 750px;
+
 }
+
 
 body{
-margin: 50px;
-margin-top: -10px;
-/* background-image: url(https://i.pinimg.com/originals/2a/af/d1/2aafd11738f637a97046f6ae2d8ca5b6.jpg); */
-background-size: 1600px;
+  margin-top: -10px;
+  background-image:url(https://i.pinimg.com/originals/3c/5f/32/3c5f3258618da5ef3b2d12731234e1ac.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+#sms, #sms2{
+  padding: 10px;
+  margin-left:600px;
+  border-color: red;
+  background-color: black;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 70px;
+  font-size: 25px;
+  text-align: center;
+  border: solid thick cyan;
+  background-color: cyan;
+  border-radius: 13px;
+
 }

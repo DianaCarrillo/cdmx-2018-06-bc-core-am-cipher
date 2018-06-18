@@ -12,7 +12,7 @@
 #introduction{
   font-size: 20px;
   color:white;
-  background-color: deeppink;
+  background-color:darkturquoise;
   padding-left: 15px;
 
 }
@@ -25,8 +25,15 @@
 #instructionTwo{
 text-align: center;
 font-size: 25px;
+color: black;
 }
 
+#cifradoDescifrado{
+  font-size: 30px;
+  margin-left: 600px;
+  font-weight: bold;
+  color: yellow;
+}
 
 #input{
 
@@ -55,7 +62,7 @@ border:thick;
 
 
 
-#encodeClick, #decodeClick {
+#encodeClick, #decodeClick, #reset {
   padding: 13px;
   font-family:inherit;
   font-weight: bold;
@@ -64,6 +71,8 @@ border:thick;
   width: 200px;
   border: thick;
   border-style: outset;
+  background-color: initial;
+    color: yellow;
 
 }
 #decodeClick{
@@ -76,11 +85,14 @@ margin-left: 40px;
 
 body{
   margin-top: -10px;
-  background-image:url(https://thumbs.dreamstime.com/b/party-background-colorful-confetti-67047639.jpg);
+  background-image:url(https://png.pngtree.com/element_origin_min_pic/16/08/05/2257a4a6968848a.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+}
+#reset{
+  margin-left: 750px;
 }
 
 #sms, #sms2{

@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Righteous|Rock+Salt" rel="stylesheet">
-  </head>
-  <body>
-    <h1 id="cipherFriends">Cipher friends</h1>
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Righteous|Rock+Salt" rel="stylesheet">
+</head>
+<body>
+  <h1 id="cipherFriends">Cipher friends</h1>
 
-<div id="introduction">
-      <p id="introductionOne">¿PLANEAS UNA FIESTA SORPRESA? ¡Crea mensajes secretos con tus amig@s!</p>
-      <p id="instructionTwo"> 1.- Escribe un texto, elige un número y pulsa <b>cifrar</b><br> 2.- Con el texto cifrado y mismo número, pulsa <b>descifrar</b> para descubrir el mensaje secreto</p>
-    </div>
-    <br>
+  <div id="introduction">
+    <p id="introductionOne">¿PLANEAS UNA FIESTA SORPRESA? ¡Crea mensajes secretos con tus amig@s!</p>
+    <p id="instructionTwo"> 1.- Escribe un texto, elige un número y pulsa <b>cifrar</b><br> 2.- Con el texto cifrado y mismo número, pulsa <b>descifrar</b> para descubrir el mensaje secreto</p>
+  </div>
+  <br>
 
-      <!--Hacer una caja de entrada (input) que contenga un string;
-      tengo que crear 2 botones. Encriptar y desencritpar. Para hacer que funcionen los botones
-    en mi js tengo que llamarlos y hacer una función -->
+  <!--Hacer una caja de entrada (input) que contenga un string;
+  tengo que crear 2 botones. Encriptar y desencritpar. Para hacer que funcionen los botones
+  en mi js tengo que llamarlos y hacer una función -->
 
-<input id="input" type="text" placeholder="Escribe el mensaje"><br><br>
-<input id="offset" type="text" placeholder="Ingresa un número"><br><br>
-<button id="encodeClick" type="button">Cifra</button>
-<button id="decodeClick" type="button">Descifra</button>
+  <input id="input" type="text" placeholder="Escribe el mensaje"><br><br>
+  <input id="offset" type="text" placeholder="Ingresa un número"><br><br>
+  <button id="encodeClick" type="button">Cifra</button>
+  <button id="decodeClick" type="button">Descifra</button>
   <br>
   <br>
-<p id=cifradoDescifrado>Este es tu texto cifrado o descifrado:</p>
-<input id="sms" type="text" placeholder="Resultado"><br>
-<button id="reset" type="button" onclick="javascript:window.location.reload();">Reset</button>
-<!-- <input id="sms2" type="text" placeholder="Tu texto descifrado es:" > -->
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+
+  <p id=cifradoDescifrado>Este es tu texto cifrado o descifrado:</p>
+  <input id="sms" type="text" placeholder="Resultado"><br>
+  <button id="reset" type="button" onclick="javascript:window.location.reload();">Reset</button>
+  <!-- <input id="sms2" type="text" placeholder="Tu texto descifrado es:" > -->
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
 </html>

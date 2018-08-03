@@ -1,9 +1,8 @@
-#cipherFriends{
+#cipher-friends{
   font-family:'Righteous';
   font-size: 70px;
   font-weight: bold;
   text-align: right;
-  color: black;
   margin: 0px;
   padding: 15px;
   color: yellow;
@@ -11,24 +10,22 @@
 
 #introduction{
   font-size: 20px;
-  color:white;
-  background-color:darkturquoise;
   padding-left: 15px;
 
 }
-#introductionOne{
-  color: black;
+#introduction-one{
+  color: white;
   font-weight: bolder;
   font-size: 30px;
   text-align: center;
 }
-#instructionTwo{
+#instruction-two{
 text-align: center;
 font-size: 25px;
-color: black;
+color: white;
 }
 
-#cifradoDescifrado{
+#cifrado-descifrado{
   font-size: 30px;
   margin-left: 600px;
   font-weight: bold;
@@ -62,7 +59,7 @@ border:thick;
 
 
 
-#encodeClick, #decodeClick, #reset {
+#encode-click, #decode-click, #reset {
   padding: 13px;
   font-family:inherit;
   font-weight: bold;
@@ -75,21 +72,21 @@ border:thick;
     color: yellow;
 
 }
-#decodeClick{
+#decode-click{
 margin-left: 40px;
 }
 
-#encodeClick{
+#encode-click{
   margin-left: 620px;
 }
 
 body{
   margin-top: -10px;
-  background-image:url(https://png.pngtree.com/element_origin_min_pic/16/08/05/2257a4a6968848a.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  background-color:#5e35b1; 
 }
 #reset{
   margin-left: 750px;

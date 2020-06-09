@@ -1,5 +1,5 @@
-#cipher-friends{
-  font-family:'Righteous';
+#cipher-friends {
+  font-family: 'Righteous';
   font-size: 70px;
   font-weight: bold;
   text-align: right;
@@ -8,97 +8,106 @@
   color: yellow;
 }
 
-#introduction{
+#introduction {
   font-size: 20px;
   padding-left: 15px;
 
 }
-#introduction-one{
+
+#introduction-one {
   color: white;
   font-weight: bolder;
   font-size: 30px;
   text-align: center;
 }
-#instruction-two{
-text-align: center;
-font-size: 25px;
-color: white;
+
+#instruction-two {
+  text-align: center;
+  font-size: 25px;
+  color: white;
 }
 
-#cifrado-descifrado{
+#cifrado-descifrado {
   font-size: 30px;
   margin-left: 600px;
   font-weight: bold;
   color: yellow;
 }
 
-#input{
+#input {
 
-  margin-left:400px;
-  padding: 25px 300px 70px 300px;
+  margin-left: 550px;
+  width: 500px;
+  height: 100px;
   font-size: 25px;
   text-align: center;
   /* border: solid thick yellow; */
   background-color: yellow;
   border-radius: 13px;
   border: thick;
-  
+
 }
 
-#offset{
-  margin-left:650px;
-  padding: 25px 50px 70px 50px;
+#offset {
+  margin-left: 650px;
+  width: 300px;
+  height: 100px;
   font-size: 25px;
   text-align: center;
   /* border: solid thick yellow; */
   background-color: yellow;
   border-radius: 13px;
- border:thick;
+  border: thick;
 }
 
 
 
-#encode-click, #decode-click, #reset {
+#encode-click,
+#decode-click,
+#reset {
   padding: 13px;
-  font-family:inherit;
+  font-family: inherit;
   font-weight: bold;
   font-size: 20px;
-  display:inline-block;
+  display: inline-block;
   width: 200px;
   border: thick;
   border-style: outset;
   background-color: initial;
-    color: yellow;
+  color: yellow;
 
 }
-#decode-click{
-margin-left: 40px;
+
+#decode-click {
+  margin: auto
 }
 
-#encode-click{
+#encode-click {
   margin-left: 620px;
 }
 
-body{
+body {
   margin-top: -10px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  background-color:#5e35b1; 
-}
-#reset{
-  margin-left: 750px;
+  background-color: #5e35b1;
 }
 
-#sms, #sms2{
-  margin-left:400px;
+#reset {
+  margin-left: 720px;
+}
+
+#sms,
+#sms2 {
+  margin-left: 400px;
   padding: 25px 300px 70px 300px;
   font-size: 25px;
   text-align: center;
   background-color: cyan;
   border-color: cyan;
   border-radius: 13px;
-  border:thick;
-/* https://i.pinimg.com/originals/3c/5f/32/3c5f3258618da5ef3b2d12731234e1ac.jpg */
+  border: thick;
+  /* https://i.pinimg.com/originals/3c/5f/32/3c5f3258618da5ef3b2d12731234e1ac.jpg */
 }

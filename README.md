@@ -1,4 +1,4 @@
-# Definición del producto
+# Cipher Friends
 
 Los usuarios de Cipher Friends son jóvenes de 18-25años. Amantes de las fiestas, de las redes sociales, la convivencia entre amig@s y familiares. Pensemos en Tania. Ella es una chica de 24 años, originaria de la CDMX que quiere hacer una fiesta sorpresa para su novio.  Las redes sociales como facebook podrían ayudar a Tania creando un evento privado, sin embargo las posibilidades de que su novio se entere de la fiesta son altas porque ella odia bloquear sus gadgets todo el tiempo.
 

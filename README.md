@@ -6,6 +6,4 @@ Por ello creamos Cipher Friends, una aplicación que busca  facilitar un diálog
 
 ## ¿Cómo funciona?
 Cipher friends es una aplicación que le permite al usuari@ crear mensajes encriptados al ingresar un texto y un número cualquiera. Éste último será el elemento principal para que posteriormente uno o varios receptores sean posibilitados a descifrarlo y entender su contenido.
-
-
-La interface de este producto fue pensada con base en las necesidades del usuario: un producto visualmente llamativo y fácil de utilizar. Tomamos en cuenta el feedback que cinco usuarios proporcionaron para mejorar la experiencia. Para ello utilizamos la observación como herramienta principal. Así mismo realizamos preguntas para entender qué era lo que más se les dificultaba al usar la aplicación y qué era lo que más les gustaba de ella.
+La interface de cipher friends fue pensada con base en las necesidades del usuario: un producto visualmente llamativo y fácil de utilizar. Tomamos en cuenta el feedback que cinco usuarios proporcionaron para mejorar la experiencia.

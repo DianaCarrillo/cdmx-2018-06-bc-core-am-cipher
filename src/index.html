@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
 
   <title>Caesar Cipher</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Righteous|Rock+Salt" rel="stylesheet">
 </head>
+
 <body>
   <h1 id="cipher-friends">Cipher friends</h1>
 
   <div id="introduction">
     <p id="introduction-one">¡Crea mensajes secretos con tus amig@s!</p>
-    <p id="instruction-two"> 1.- Escribe un texto, elige un número y pulsa <b>cifrar</b><br> 2.- Con el texto cifrado y mismo número, pulsa <b>descifrar</b> para descubrir el mensaje secreto</p>
+    <p id="instruction-two"> 1.- Escribe un texto, elige un número y da click en <b>cifrar</b><br> 2.- Copia el texto
+      cifrado y mismo número para <b>descifrar</b>. Descubrir el mensaje secreto</p>
   </div>
   <br>
 
@@ -28,11 +32,12 @@
   <br>
   <br>
 
-  <p id=cifrado-descifrado>Este es tu texto cifrado o descifrado:</p>
+  <p id=cifrado-descifrado>Éste es tu texto cifrado:</p>
   <input id="sms" type="text" placeholder="Resultado"><br>
   <button id="reset" type="button" onclick="javascript:window.location.reload();">Reset</button>
   <!-- <input id="sms2" type="text" placeholder="Tu texto descifrado es:" > -->
   <script src="cipher.js"></script>
   <script src="index.js"></script>
 </body>
+
 </html>

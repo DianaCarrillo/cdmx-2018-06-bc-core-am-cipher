@@ -42,7 +42,7 @@ color: white;
   background-color: yellow;
   border-radius: 13px;
   border: thick;
-  border-color: yellow;
+  
 }
 
 #offset{
@@ -53,8 +53,7 @@ color: white;
   /* border: solid thick yellow; */
   background-color: yellow;
   border-radius: 13px;
-border-color: yellow;
-border:thick;
+ border:thick;
 }
 
 
